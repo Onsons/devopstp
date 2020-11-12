@@ -1,8 +1,7 @@
-package com.example.demo.controllers;
+package com.example.demo;
 
 import implem.Fact;
 import org.openjdk.jmh.annotations.*;
-import org.openjdk.jmh.infra.Blackhole;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
@@ -13,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @Fork(value = 2)
-public class BenchMark {
+public class BenchMarkTest {
 
     @Benchmark
     public void factorialUsingForLoop(BenchmarkState s){
@@ -34,7 +33,7 @@ public class BenchMark {
 
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
-                .include(BenchMark.class.getSimpleName())
+                .include(BenchMarkTest.class.getSimpleName())
                 .forks(1)
                 .build();
 

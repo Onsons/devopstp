@@ -5,8 +5,8 @@ build:
 start: build
 	mvn spring-boot:run
 test:
-	mvn test
+	mvn test FactTest
 clean:
 	mvn clean install
 benchmark:
-	mvn clean -Dtest=BenchMark test
+	mvn test BenchMark
