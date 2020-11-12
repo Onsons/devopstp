@@ -32,7 +32,7 @@ public class BenchMarkTest {
         public int n = 5;
     }
     @Test
-    public static void main(String[] args) throws RunnerException {
+    public void launchBenchmark() throws Exception {
         Options opt = new OptionsBuilder()
                 .include(BenchMarkTest.class.getSimpleName())
                 .forks(1)
