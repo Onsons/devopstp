@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import implem.Fact;
+import org.junit.jupiter.api.Test;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
@@ -30,7 +31,7 @@ public class BenchMarkTest {
     public static class BenchmarkState {
         public int n = 5;
     }
-
+    @Test
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
                 .include(BenchMarkTest.class.getSimpleName())
