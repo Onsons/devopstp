@@ -9,4 +9,4 @@ test:
 clean:
 	mvn clean install
 benchmark: clean
-	java -jar target/test-classes/com/example/demo/controllers
+	mvn -B package --file src/test/java/com/example/demo/controllers/BenchMark.java
