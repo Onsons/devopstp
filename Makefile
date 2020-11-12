@@ -9,4 +9,4 @@ test:
 clean:
 	mvn clean install
 benchmark:
-	mvn run  BenchMark.java
+	mvn clean -Dtest=BenchMark test
