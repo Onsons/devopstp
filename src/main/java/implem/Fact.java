@@ -1,6 +1,10 @@
 package implem;
 
+import org.openjdk.jmh.annotations.*;
+
+
 public class Fact {
+
 
     public long factorialUsingForLoop(int n) {
         long fact = 1;
@@ -13,6 +17,6 @@ public class Fact {
         if (n <= 2) {
             return n;
         }
-        return n * factorialUsingRecursion(n - 1);
+        return n * factorialUsingRecursion((n) - 1);
     }
 }

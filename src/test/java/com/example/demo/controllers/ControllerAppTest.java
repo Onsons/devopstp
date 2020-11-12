@@ -1,15 +1,18 @@
 package com.example.demo.controllers;
 
 import org.junit.jupiter.api.Test;
+import org.openjdk.jmh.annotations.*;
+
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ControllerAppTest {
+public class ControllerAppTest {
 
     @Test
-    void getFact() {
-        ControllerApp controller = new ControllerApp();
+    public void getFact() {
+       /* ControllerApp controller = new ControllerApp();
         long response = controller.getFact(5);
-        assertEquals(120,response);
+        assertEquals(120,response);*/
     }
 }
